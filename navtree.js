@@ -31,8 +31,7 @@ var NAVTREE =
           [ "Logging settings", "manual.html#logging-settings", null ],
           [ "Time-stamping service settings", "manual.html#TS-settings", null ],
           [ "PKCS#11 settings", "manual.html#pkcs11-settings", null ],
-          [ "Trust anchor settings", "manual.html#CA-settings", null ],
-          [ "XML Schema settings", "manual.html#schema-settings", null ],
+          [ "Trust anchor/TSL settings", "manual.html#CA-settings", null ],
           [ "HTTP proxy settings", "manual.html#proxy-settings", null ],
           [ "Settings for signing OCSP requests", "manual.html#ocspsigning-settings", null ],
           [ "OCSP responder settings", "manual.html#ocspresponder-settings", null ]
@@ -51,10 +50,9 @@ var NAVTREE =
           ] ]
         ] ],
         [ "Reading and writing DigiDoc documents", "manual.html#containeropen", null ],
-        [ "Validating signatures", "manual.html#validate", [
+        [ "Validating signature containers and signatures", "manual.html#validate", [
           [ "Using the main validation method", "manual.html#main-method", null ],
           [ "Checking for additional errors/warnings", "manual.html#additional", [
-            [ "Checking for test signature", "manual.html#test-signature", null ],
             [ "Checking for old file formats", "manual.html#old-format", null ]
           ] ],
           [ "Determining the validation status", "manual.html#validation-status", [
@@ -73,17 +71,15 @@ var NAVTREE =
         [ "Creating and signing a document", "manual.html#Creating", null ],
         [ "Opening document, validating signatures and extracting data files", "manual.html#Opening", null ],
         [ "Adding signatures", "manual.html#Adding", null ],
-        [ "Removing signatures and data files", "manual.html#Removing", null ],
-        [ "Validating TSL and printing its diagnostics", "manual.html#TSL-tool", null ]
+        [ "Removing signatures and data files", "manual.html#Removing", null ]
       ] ],
       [ "National and cross-border support", "manual.html#supported-tokens", [
-        [ "TSL lists", "manual.html#TSL-overview", [
+        [ "TSL list usage in Libdigidocpp", "manual.html#TSL-overview", [
           [ "TSL initialization process", "manual.html#TSL-init", null ]
         ] ],
-        [ "Identity tokens", "manual.html#tokens", null ]
+        [ "Identity tokens in Libdigidocpp", "manual.html#tokens", null ]
       ] ],
       [ "Interoperability testing", "manual.html#testing", [
-        [ "ASiC Remote Plugtests", "manual.html#Plugtests", null ],
         [ "DigiDoc framework cross-usability tests", "manual.html#cross-usability", null ]
       ] ],
       [ "Libdigidocpp implementation notes", "manual.html#implementation-notes", [
@@ -96,7 +92,6 @@ var NAVTREE =
     [ "Namespace Members", "namespacemembers.html", [
       [ "All", "namespacemembers.html", null ],
       [ "Functions", "namespacemembers_func.html", null ],
-      [ "Variables", "namespacemembers_vars.html", null ],
       [ "Typedefs", "namespacemembers_type.html", null ]
     ] ],
     [ "Classes", null, [
@@ -104,8 +99,8 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
@@ -116,7 +111,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"classdigidoc_1_1XmlConfV3.html#a47986be9866ac7fba484ca115e19ba3b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

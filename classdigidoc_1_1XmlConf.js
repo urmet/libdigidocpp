@@ -1,0 +1,25 @@
+var classdigidoc_1_1XmlConf =
+[
+    [ "XmlConf", "classdigidoc_1_1XmlConf.html#a995e086d0fe0ea606c940c77ac5644df", null ],
+    [ "~XmlConf", "classdigidoc_1_1XmlConf.html#a497bf8f3a4f52adae0e1ca623d93136b", null ],
+    [ "certsPath", "classdigidoc_1_1XmlConf.html#a414e7ea4da0d546b9399daf8a2461598", null ],
+    [ "logFile", "classdigidoc_1_1XmlConf.html#a6d8ae70674688dacefb525db4c1b68bd", null ],
+    [ "logLevel", "classdigidoc_1_1XmlConf.html#ae98a983634e26b5f546a497c3a4173d0", null ],
+    [ "ocsp", "classdigidoc_1_1XmlConf.html#a893a3d0f691450802aa6de497e043301", null ],
+    [ "PKCS11Driver", "classdigidoc_1_1XmlConf.html#a64195757f76d26b482547391a45cc5af", null ],
+    [ "PKCS12Cert", "classdigidoc_1_1XmlConf.html#a39a6f0163c9d9dd8bb85ed209c2b02c6", null ],
+    [ "PKCS12Disable", "classdigidoc_1_1XmlConf.html#a81ef5875f539e1b6be4464b21d0a39ef", null ],
+    [ "PKCS12Pass", "classdigidoc_1_1XmlConf.html#a4e13d3d569787f1e76132a8f1b6d5f29", null ],
+    [ "proxyHost", "classdigidoc_1_1XmlConf.html#a4c31629d8b8b298fabd6a99823feafbf", null ],
+    [ "proxyPass", "classdigidoc_1_1XmlConf.html#a6d658f45a75698e0ae82c9d41e775851", null ],
+    [ "proxyPort", "classdigidoc_1_1XmlConf.html#ace2e89f0120aa12df4c878a2b4dd92ed", null ],
+    [ "proxyUser", "classdigidoc_1_1XmlConf.html#a088f761d85852c29521de4aa0da5b5e9", null ],
+    [ "setPKCS12Cert", "classdigidoc_1_1XmlConf.html#a782bfa39091c7319adc5f8dc08405de9", null ],
+    [ "setPKCS12Disable", "classdigidoc_1_1XmlConf.html#a1b64b26f560ac009a62135c6f2b013fb", null ],
+    [ "setPKCS12Pass", "classdigidoc_1_1XmlConf.html#a79de64748fea3cf6e22fcc91ac12cc83", null ],
+    [ "setProxyHost", "classdigidoc_1_1XmlConf.html#a9c722242497e4c6c30a6ea9f9149f112", null ],
+    [ "setProxyPass", "classdigidoc_1_1XmlConf.html#a71712f3f8f1856caadc73ef0b96a29a9", null ],
+    [ "setProxyPort", "classdigidoc_1_1XmlConf.html#a736bffb3f90d8ac152c28faf438d7a22", null ],
+    [ "setProxyUser", "classdigidoc_1_1XmlConf.html#a0ad00ec96f7d0cef237c8ba1db2d3847", null ],
+    [ "xsdPath", "classdigidoc_1_1XmlConf.html#a1787608c8fad5e105e0388b4ab3f47a3", null ]
+];

@@ -1,5 +1,14 @@
 var hierarchy =
 [
+    [ "digidoc::Conf", "classdigidoc_1_1Conf.html", [
+      [ "digidoc::ConfV2", "classdigidoc_1_1ConfV2.html", [
+        [ "digidoc::ConfV3", "classdigidoc_1_1ConfV3.html", [
+          [ "digidoc::XmlConfV3", "classdigidoc_1_1XmlConfV3.html", null ]
+        ] ],
+        [ "digidoc::XmlConfV2", "classdigidoc_1_1XmlConfV2.html", null ]
+      ] ],
+      [ "digidoc::XmlConf", "classdigidoc_1_1XmlConf.html", null ]
+    ] ],
     [ "digidoc::Container", "classdigidoc_1_1Container.html", null ],
     [ "digidoc::DataFile", "classdigidoc_1_1DataFile.html", null ],
     [ "digidoc::Exception", "classdigidoc_1_1Exception.html", null ],

@@ -97,13 +97,13 @@ Public Types</h2></td></tr>
 <a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a453ad7eef181fe2673fbb8272c58d7e8">PINIncorrect</a> = 1, 
 <a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a9f001d60c651a8e441c64e620ab55a19">PINLocked</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a6763673c96651ec9601aebf10422a256">ReferenceDigestWeak</a> = 12, 
+&#160;&#160;<a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754ac66d3ff482df38b0d3fae350bb69fded">ReferenceDigestWeak</a> = 12, 
 <a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a34c74bf34956b04a3c518e6b220fd6cb">RefereneceDigestWeak</a> = ReferenceDigestWeak, 
 <a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a23656be0743e419b2aa12910f22bc82d">SignatureDigestWeak</a> = 13, 
 <a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754adb9d178d18df5b2f2148e411cd157ec9">DataFileNameSpaceWarning</a> = 14, 
 <br />
 &#160;&#160;<a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a219949393ee702f74205f9f676a21ef0">IssuerNameSpaceWarning</a> = 15, 
-<a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a0976ac1cfcdb72bf9991ad6819d024c4">ProducedATLateWarning</a> = 16, 
+<a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a83adc4b59601ba09b0db3511730511eb">ProducedATLateWarning</a> = 16, 
 <a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a672aa83e8378bf85e03e79d165d1fdb5">DDocError</a> = 512
 <br />
  }</td></tr>
@@ -206,7 +206,9 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7a400013d0a2fb36b1978bc427d0b754a9f001d60c651a8e441c64e620ab55a19"></a>PINLocked&#160;</td><td class="fielddoc">
 <p>PIN locked error </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7a400013d0a2fb36b1978bc427d0b754a6763673c96651ec9601aebf10422a256"></a>ReferenceDigestWeak&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a7a400013d0a2fb36b1978bc427d0b754ac66d3ff482df38b0d3fae350bb69fded"></a>ReferenceDigestWeak&#160;</td><td class="fielddoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a34c74bf34956b04a3c518e6b220fd6cb">digidoc::Exception::RefereneceDigestWeak</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>keeping for backwards compatibility </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7a400013d0a2fb36b1978bc427d0b754a34c74bf34956b04a3c518e6b220fd6cb"></a>RefereneceDigestWeak&#160;</td><td class="fielddoc">
 <p>One or more referenced objects in BDoc container are calculated by using weaker digest method that recommended </p>
@@ -220,7 +222,8 @@ Static Public Member Functions</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7a400013d0a2fb36b1978bc427d0b754a219949393ee702f74205f9f676a21ef0"></a>IssuerNameSpaceWarning&#160;</td><td class="fielddoc">
 <p>DDoc warning: &lt;X509IssuerName&gt; and/or &lt;X509IssuerSerial&gt; XML element is missing xmlns attribute </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a7a400013d0a2fb36b1978bc427d0b754a0976ac1cfcdb72bf9991ad6819d024c4"></a>ProducedATLateWarning&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a7a400013d0a2fb36b1978bc427d0b754a83adc4b59601ba09b0db3511730511eb"></a>ProducedATLateWarning&#160;</td><td class="fielddoc">
+<p>TimeStamp and OCSP time difference is more than 15 minutes </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a7a400013d0a2fb36b1978bc427d0b754a672aa83e8378bf85e03e79d165d1fdb5"></a>DDocError&#160;</td><td class="fielddoc">
 <p>DDoc libdigidoc error codes bit masked </p>
@@ -386,6 +389,12 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Ignore Warning exceptions globaly </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Push additional exception to list </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -460,6 +469,7 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Verifies if Warning exception is in igonre list </p>
 
 <p>References <a class="el" href="classdigidoc_1_1Exception.html#a8c4c8484c24d60e43ac74117745ea7fc">code()</a>.</p>
 
@@ -537,6 +547,12 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Ignore Warning exceptions globaly </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>Set new exception list </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -550,7 +566,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacedigidoc.html">digidoc</a></li><li class="navelem"><a class="el" href="classdigidoc_1_1Exception.html">Exception</a></li>
-    <li class="footer">Generated on Tue Nov 25 2014 12:25:03 for libdigidocpp by
+    <li class="footer">Generated on Thu Feb 19 2015 14:37:40 for libdigidocpp by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
