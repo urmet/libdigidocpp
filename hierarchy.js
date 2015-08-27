@@ -3,6 +3,9 @@ var hierarchy =
     [ "digidoc::Conf", "classdigidoc_1_1Conf.html", [
       [ "digidoc::ConfV2", "classdigidoc_1_1ConfV2.html", [
         [ "digidoc::ConfV3", "classdigidoc_1_1ConfV3.html", [
+          [ "digidoc::ConfV4", "classdigidoc_1_1ConfV4.html", [
+            [ "digidoc::XmlConfV4", "classdigidoc_1_1XmlConfV4.html", null ]
+          ] ],
           [ "digidoc::XmlConfV3", "classdigidoc_1_1XmlConfV3.html", null ]
         ] ],
         [ "digidoc::XmlConfV2", "classdigidoc_1_1XmlConfV2.html", null ]

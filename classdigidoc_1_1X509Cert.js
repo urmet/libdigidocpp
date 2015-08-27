@@ -24,6 +24,7 @@ var classdigidoc_1_1X509Cert =
     [ "~X509Cert", "classdigidoc_1_1X509Cert.html#a5380ee6e53e8c3d68bb4e3322cb045dc", null ],
     [ "certificatePolicies", "classdigidoc_1_1X509Cert.html#a85fd4e9f21828dad6ef3a55bf9cf1d7c", null ],
     [ "handle", "classdigidoc_1_1X509Cert.html#ae2436ce8347338a1fb24b7c944729d1a", null ],
+    [ "isCA", "classdigidoc_1_1X509Cert.html#aeae42ccd61adb6e82fbc42b9a66d951d", null ],
     [ "issuerName", "classdigidoc_1_1X509Cert.html#a7e378b89c4f37f3485ee7709efa6d1db", null ],
     [ "isValid", "classdigidoc_1_1X509Cert.html#ac3131857875013e761ae6b9398c8d1bd", null ],
     [ "keyUsage", "classdigidoc_1_1X509Cert.html#a39969dfe3a79c4919558a2659322d8be", null ],

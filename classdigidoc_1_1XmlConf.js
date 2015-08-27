@@ -15,7 +15,7 @@ var classdigidoc_1_1XmlConf =
     [ "proxyPort", "classdigidoc_1_1XmlConf.html#ace2e89f0120aa12df4c878a2b4dd92ed", null ],
     [ "proxyUser", "classdigidoc_1_1XmlConf.html#a088f761d85852c29521de4aa0da5b5e9", null ],
     [ "setPKCS12Cert", "classdigidoc_1_1XmlConf.html#a782bfa39091c7319adc5f8dc08405de9", null ],
-    [ "setPKCS12Disable", "classdigidoc_1_1XmlConf.html#a1b64b26f560ac009a62135c6f2b013fb", null ],
+    [ "setPKCS12Disable", "classdigidoc_1_1XmlConf.html#a349e3a0fb35efbff120a4a2cbfcc5253", null ],
     [ "setPKCS12Pass", "classdigidoc_1_1XmlConf.html#a79de64748fea3cf6e22fcc91ac12cc83", null ],
     [ "setProxyHost", "classdigidoc_1_1XmlConf.html#a9c722242497e4c6c30a6ea9f9149f112", null ],
     [ "setProxyPass", "classdigidoc_1_1XmlConf.html#a71712f3f8f1856caadc73ef0b96a29a9", null ],
