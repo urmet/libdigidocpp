@@ -15,7 +15,6 @@ var classdigidoc_1_1Exception =
       [ "PINIncorrect", "classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a453ad7eef181fe2673fbb8272c58d7e8", null ],
       [ "PINLocked", "classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a9f001d60c651a8e441c64e620ab55a19", null ],
       [ "ReferenceDigestWeak", "classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754ac66d3ff482df38b0d3fae350bb69fded", null ],
-      [ "RefereneceDigestWeak", "classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a34c74bf34956b04a3c518e6b220fd6cb", null ],
       [ "SignatureDigestWeak", "classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a23656be0743e419b2aa12910f22bc82d", null ],
       [ "DataFileNameSpaceWarning", "classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754adb9d178d18df5b2f2148e411cd157ec9", null ],
       [ "IssuerNameSpaceWarning", "classdigidoc_1_1Exception.html#a7a400013d0a2fb36b1978bc427d0b754a219949393ee702f74205f9f676a21ef0", null ],

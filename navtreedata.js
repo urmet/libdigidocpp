@@ -70,7 +70,7 @@ var NAVTREE =
         [ "Exception handling", "manual.html#exceptions", null ]
       ] ],
       [ "Libdigidocpp utility program", "manual.html#utility", [
-        [ "Creating and signing a document", "manual.html#Creating", null ],
+        [ "Creating and signing a document (local signing)", "manual.html#Creating", null ],
         [ "Opening document, validating signatures and extracting data files", "manual.html#Opening", null ],
         [ "Adding signatures", "manual.html#Adding", null ],
         [ "Removing signatures and data files", "manual.html#Removing", null ]
@@ -102,7 +102,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Functions", "functions_func.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
@@ -114,7 +114,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdigidoc_1_1XmlConfV3.html"
+"hierarchy.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
