@@ -41,16 +41,18 @@ var NAVTREE =
       ] ],
       [ "Using Libdigidocpp API", "manual.html#usage", [
         [ "Initialization", "manual.html#initialization", null ],
-        [ "Creating and signing a DigiDoc document", "manual.html#creating", [
+        [ "Creating and signing a DigiDoc document (local signing)", "manual.html#creating", [
           [ "Creating a DigiDoc container", "manual.html#containercreate", null ],
           [ "Adding data files", "manual.html#adddatafile", null ],
           [ "Adding signatures", "manual.html#API-add-sign", [
+            [ "Optionally specify the signature profile", "manual.html#API-sign-profile", null ],
             [ "Optionally specify additional signer's data", "manual.html#API-sign-data", null ],
             [ "Optionally specify signature digest method", "manual.html#API-signature-hash", null ],
-            [ "Specify the signature profile and create the signature", "manual.html#API-sign-create", null ],
+            [ "Create the signature", "manual.html#API-sign-create", null ],
             [ "Validating the created signatures", "manual.html#validatesig", null ]
           ] ]
         ] ],
+        [ "Creating and signing a DigiDoc document (external signing, e.g. in browser)", "manual.html#websigning", null ],
         [ "Reading and writing DigiDoc documents", "manual.html#containeropen", null ],
         [ "Validating signature containers and signatures", "manual.html#validate", [
           [ "Using the main validation method", "manual.html#main-method", null ],
@@ -71,6 +73,7 @@ var NAVTREE =
       ] ],
       [ "Libdigidocpp utility program", "manual.html#utility", [
         [ "Creating and signing a document (local signing)", "manual.html#Creating", null ],
+        [ "Creating and signing a document (external signing, e.g. in browser)", "manual.html#websign", null ],
         [ "Opening document, validating signatures and extracting data files", "manual.html#Opening", null ],
         [ "Adding signatures", "manual.html#Adding", null ],
         [ "Removing signatures and data files", "manual.html#Removing", null ]
