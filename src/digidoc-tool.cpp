@@ -316,6 +316,11 @@ static void printUsage(const char *executable)
     << "      --mime=        - can be after --file parameter. Default value is application/octet-stream" << endl
     << "      --dontsign     - Don't sign the newly created container." << endl
     << "      for additional options look sign command" << endl << endl
+    << "  Command createPatch:" << endl
+    << "    Example: " << executable << " createPatch folder/content/to/sign" << endl
+    << "    Available options:" << endl
+    << "      --dontValidate= - Don't validate container" << endl
+    << "      for additional options look sign command" << endl << endl
     << "  Command open:" << endl
     << "    Example: " << executable << " open container-file.bdoc" << endl
     << "    Available options:" << endl
@@ -362,7 +367,7 @@ struct Params
     string path, profile, pkcs11, pkcs12, pin, city, state, postalCode, country, cert;
     vector<pair<string,string> > files;
     vector<string> roles;
-    bool cng = true, selectFirst = false, doSign = true;
+    bool cng = true, selectFirst = false, doSign = true, dontValidate = false;
     static const map<string,string> profiles;
 };
 
@@ -411,6 +416,7 @@ Params::Params(int argc, char *argv[])
             cng = false;
             pkcs12 = arg.substr(9);
         }
+        else if(arg == "--dontValidate") dontValidate = true;
         else if(arg.find("--pin=") == 0) pin = arg.substr(6);
         else if(arg.find("--cert=") == 0) cert = arg.substr(7);
         else if(arg.find("--city=") == 0) city = arg.substr(7);
@@ -830,6 +836,73 @@ static int create(int argc, char* argv[])
 
 
 /**
+ * Create new container.
+ *
+ * @param argc number of command line arguments.
+ * @param argv command line arguments.
+ * @return EXIT_FAILURE (1) - failure, EXIT_SUCCESS (0) - success
+ */
+static int createPatch(int argc, char* argv[])
+{
+    Params p(argc, argv);
+    if(p.path.empty())
+    {
+        printUsage(argv[0]);
+        return EXIT_FAILURE;
+    }
+
+    unique_ptr<Signer> signer;
+    try {
+#ifdef _WIN32
+        if(p.cng)
+            signer.reset(new WinSigner(p.pin, p.selectFirst));
+        else
+#endif
+        if(!p.pkcs12.empty())
+            signer.reset(new PKCS12Signer(p.pkcs12, p.pin));
+        else
+            signer.reset(new ConsolePinSigner(p.pkcs11, p.pin));
+        signer->setSignatureProductionPlace(p.city, p.state, p.postalCode, p.country);
+        signer->setSignerRoles(p.roles);
+        signer->setProfile(p.profile);
+    } catch(const Exception &e) {
+        parseException(e, "Caught Exception:");
+        return EXIT_FAILURE;
+    }
+
+    int returnCode = EXIT_SUCCESS;
+    for(const string &file: File::listFiles(p.path))
+    {
+        if(file.compare(file.size() - 6, 6, ".asice") == 0)
+            continue;
+        std::cout << "Signing file: " << file << endl;
+        try {
+            unique_ptr<Container> doc(Container::create(file + ".asice"));
+            doc->addDataFile(file, "application/octet-stream");
+            if(Signature *signature = doc->sign(signer.get()))
+            {
+                if(p.dontValidate)
+                    continue;
+                try {
+                    signature->validate();
+                    printf("    Validation: OK\n");
+                } catch(const Exception &e) {
+                    printf("    Validation: FAILED\n");
+                    parseException(e, "     Exception:");
+                    returnCode = EXIT_FAILURE;
+                }
+            }
+            doc->save();
+        } catch(const Exception &e) {
+            parseException(e, "  Exception:");
+            returnCode = EXIT_FAILURE;
+        }
+    }
+
+    return returnCode;
+}
+
+/**
  * Sign container.
  *
  * @param argc number of command line arguments.
@@ -1019,6 +1092,8 @@ int main(int argc, char *argv[])
         returnCode = create(argc, argv);
     else if(command == "add")
         returnCode = add(argc, argv);
+    else if(command == "createPatch")
+        returnCode = createPatch(argc, argv);
     else if(command == "remove")
         returnCode = remove(argc, argv);
     else if(command == "sign")
